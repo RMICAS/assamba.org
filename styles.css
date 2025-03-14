@@ -199,7 +199,6 @@ html, body {
 
   .projects-section h2 {
     font-size: 36px;
-    font-weight: lighter;
     color: #ffffff;
   }
 
@@ -444,8 +443,7 @@ html, body {
     margin: 5px 0;
     font-size: 30px;
     color: #ffffff;
-    font-family: 'Bebas Neue';
-    font-weight: lighter;
+ 
     text-align: left;
   }
 
@@ -877,8 +875,7 @@ a {
     flex-direction: column;
 
         h2 {
-            font-family: 'Bebas Neue';
-            font-weight: lighter;
+           
             font-size: 40px;
             color: #ffffff;
             white-space: nowrap;
@@ -917,8 +914,7 @@ a {
 
     h3 {
         text-transform: capitalize;
-        font-family: 'Bebas Neue';
-        font-weight: lighter;
+       
         font-size: 40px;
         color: #ffffff;
         margin-top: 5px;
@@ -953,8 +949,6 @@ a {
     text-align: center;
 
     h2 {
-        font-family: 'Bebas Neue';
-        font-weight: lighter;
         margin-top: 10px;
         margin-right: 0px;
         margin-left: 0px;
@@ -964,8 +958,7 @@ a {
     }
 
     h5 {
-        font-family: 'Bebas Neue';
-        font-weight: lighter;
+ 
         margin-left: 0px;
         margin-top: 17px;
         margin-bottom: 0px;
@@ -1021,8 +1014,7 @@ a {
     margin: 5px 0;
     font-size: 25px;
     color: #ffffff;
-    font-family: 'Bebas Neue';
-    font-weight: lighter;
+
     text-align: center;
   }
 
@@ -1084,8 +1076,7 @@ a {
 .contact-form {
     background-color: #617642; /* Green Background */
     color: #fff;
-    font-family: 'Bebas Neue';
-    font-weight: lighter;
+  
     padding: 20px;
     flex: 1;
     display: flex;
@@ -1102,7 +1093,6 @@ a {
 
 .contact-form h2 {
     font-size: 55px;
-    font-weight: lighter;
     margin-bottom: 25px;
     margin-top: 5px;
     line-height: 1.2;
@@ -1143,8 +1133,7 @@ textarea {
 
 .submit-button {
     background-color: #7a9d54; /* Button green */
-    font-family: 'Bebas Neue';
-    font-weight: lighter;
+
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -1179,8 +1168,7 @@ input::placeholder, textarea::placeholder {
 .contact-info h3 {
     margin-bottom: 10px;
     font-size: 1.2rem;
-    font-family: 'Bebas Neue';
-    font-weight: lighter;
+
     color: #5e753e;
 }
 
@@ -1243,8 +1231,7 @@ hr {
 
 .footer-section h3 {
     font-size: 20px;
-    font-family: 'Bebas Neue';
-    font-weight: lighter;
+
     margin-bottom: 5px;
     margin-top: 5px;
     color: #444;
