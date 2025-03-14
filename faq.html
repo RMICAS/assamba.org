@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+
+<style>
+
+body {
+    background-color: #5e753e;
+}
+
+.hero {
+    background-image: none;
+    background-color: #5E753E;
+
+    .navbar {
+      border-bottom: 1px;
+      border-bottom-style: solid;
+      border-color: black;
+      border-color:rgba(206, 206, 206, 0.678);
+      margin-bottom: 20px;
+    }
+
+}
+
+
+header {
+  color: #fff;
+  padding-top: 5px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.faq-question {
+  background-color: #B5BF93;
+  color: #000;
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  font-family: 'Lato';
+}
+
+.faq-answer {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  font-family: 'Lato';
+}
+
+.faq-answer p {
+  margin: 0;
+}
+
+
+
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 10px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+    padding: 12px;
+  }
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<section class="hero">
+
+    <!-- Logo Section -->
+  <div class="logo">
+       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="index.html">
+    <img src="assets/images/logo.png" alt="Logo">
+</a>
+    <a href="coming soon.html" class="mobile-ctn"><button>DONATE!</button></a>
+    <!-- Navigation links (hidden by default) -->
+  </div>
+  <!-- end -->
+      
+        <nav class="navbar">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#initiatives">INITIATIVES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+                <li><a href="coming soon.html"><button class="donate-btn">DONATE NOW</button></a></li>
+            </ul>
+        </nav>
+
+</section>
+
+  <header>
+    <h1>Frequently Asked Questions</h1>
+  </header>
+
+  <main>
+    <section class="faq-container">
+      <div class="faq">
+        <button class="faq-question" onclick="toggleAnswer(1)">
+            What is ASSAMBA and its mission?
+        </button>
+        <div class="faq-answer" id="answer-1">
+          <p>ASSAMBA is a Mozambican non-profit focused on promoting sustainable bamboo cultivation.
+             Our mission is to educate, train, and research bamboo's 
+            potential to support environmental, economic, and social development in Mozambique.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question" onclick="toggleAnswer(2)">
+            How is ASSAMBA supporting bamboo cultivation?
+        </button>
+        <div class="faq-answer" id="answer-2">
+          <p>We cultivate bamboo at our 3-hectare farm with 2,000 plants of 9 species.
+             We also offer training on bamboo cultivation and
+             its uses while conducting research to advance its sustainable development.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question" onclick="toggleAnswer(3)">
+            What are the goals of the PACJA-funded project?
+        </button>
+        <div class="faq-answer" id="answer-3">
+          <p>The project aims to expand our nursery, train local farmers, 
+            and grow bamboo on 10 hectares. It will also create jobs and 
+            produce eco-friendly charcoal, supporting sustainable practices 
+            in southern Mozambique.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question" onclick="toggleAnswer(4)">
+          Who is the target group?
+        </button>
+        <div class="faq-answer" id="answer-4">
+          <p>ASSAMBA works with rural communities and farmers, providing training in bamboo cultivation
+             for sustainable livelihoods. We collaborate with environmental organizations and NGOs focused
+              on reforestation and climate change mitigation. Our initiatives support entrepreneurs and small
+               businesses, such as artisans and furniture makers, interested in bamboo-based products. We also
+                engage with researchers, academics, and universities exploring bamboo’s potential, as well as
+                 policymakers and government agencies looking to integrate bamboo into sustainability strategies.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question" onclick="toggleAnswer(5)">
+          Why Bamboo?
+        </button>
+        <div class="faq-answer" id="answer-5">
+          <p>Bamboo is a fast-growing, highly renewable resource with immense environmental, economic, and social benefits.
+             It helps combat deforestation, improves soil restoration, and captures carbon, making it a key solution for
+              climate change mitigation. Its versatility allows for use in construction, furniture, energy, textiles,
+               and handicrafts, creating sustainable business opportunities. Bamboo also provides affordable housing 
+               solutions and enhances livelihoods for rural communities. With its strength, durability, and eco-friendly
+                nature, bamboo is a powerful tool for building a greener and more resilient future.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question" onclick="toggleAnswer(6)">
+          Where We Operate?
+        </button>
+        <div class="faq-answer" id="answer-6">
+          <p>ASSAMBA operates primarily in Ponta do Ouro, Maputo, Mozambique, focusing on regions where bamboo can create significant environmental
+             and socio-economic impact. We work in rural areas and vulnerable communities, promoting sustainable bamboo
+              cultivation for reforestation, eco-friendly housing, and economic opportunities. Additionally,
+               we collaborate with national and international organizations to expand the use of bamboo as a
+                sustainable solution across the country.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer-container">
+  <div class="footer-content">
+      <div class="footer-section-img">
+          <img src="assets/images/logo.png" width="100px" alt="logo">
+          <p style="color: #000;">Associação dos Amigos do Bambu - ASSAMBA</p>
+          <div class="input-container">
+            <input type="email" class="email-input" placeholder="Enter your email address">
+            <button type="submit" class="email-submit-button">
+              <img src="assets/images/arrow.png" alt="icon" class="button-icon"></button>
+        </div>
+      </div>
+      <div class="footer-section">
+          <h3>LINKS</h3>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html#initiatives">INITIATIVES</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+      </div>
+      
+      <div class="footer-section">
+          <h3>CONTACT</h3>
+          <ul>
+            <li><a href="/index.html/#contact" target="_blank">Contact Form</a></li>
+            <li><a href="/coming soon.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="/coming soon.html" target="_blank">T&C</a></li>
+        </ul>
+        
+      
+      </div>
+      <div class="footer-section">
+          <h3>SOCIAL</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/assamba.moz/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/assamba/?originalSubdomain=mz" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>© ASSAMBA. All Rights Reserved 2024 </p>
+  </div>
+</footer>
+
+
+<!-- END -->
+
+
+<script>
+    function toggleAnswer(index) {
+  const answer = document.getElementById(`answer-${index}`);
+  if (answer.style.display === 'none' || answer.style.display === '') {
+    answer.style.display = 'block';
+  } else {
+    answer.style.display = 'none';
+  }
+}
+
+</script>
+
+
+</body>
+</html>

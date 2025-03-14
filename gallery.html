@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+
+<style>
+
+* {
+    font-family: 'roboto' !important;
+}
+
+/* navbar */
+
+body {
+  background-color: #5e753e;
+}
+
+.hero {
+    background-image: none;
+    background-color: #5E753E;
+
+    .navbar {
+      border-bottom: 1px;
+      border-bottom-style: solid;
+      border-color: black;
+      border-color:rgba(206, 206, 206, 0.678);
+      margin-bottom: 20px;
+    }
+
+}
+
+/* end */
+
+.insta-feed {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery-item {
+            width: 300px;
+            margin: 10px;
+        }
+
+</style>
+
+</head>
+<body>
+
+<section class="hero">
+
+    <!-- Logo Section -->
+  <div class="logo">
+       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="index.html">
+    <img src="assets/images/logo.png" alt="Logo">
+</a>
+    <a href="coming soon.html" class="mobile-ctn"><button>DONATE!</button></a>
+    <!-- Navigation links (hidden by default) -->
+  </div>
+  <!-- end -->
+      
+        <nav class="navbar">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#initiatives">INITIATIVES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+                <li><a href="coming soon.html"><button class="donate-btn">DONATE NOW</button></a></li>
+            </ul>
+        </nav>
+
+</section>
+
+<section>
+
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery-item {
+            width: 300px;
+            margin: 10px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="w3-container w3-center">
+    <h2 style="font-weight: bold; color: white;">Image Gallery</h2>
+</div>
+
+<div class="w3-container gallery">
+    <div class="w3-card w3-margin gallery-item">
+        <img src="/assets/images/gallery-6.jpg" alt="Image 1" class="w3-image">
+        <div class="w3-container w3-center">
+            <p>Nos dias 20 e 21 de Outubro de 2023, o 1º Seminário Internacional ASSAMBA contou com incríveis 
+              palestras do ilustre @jaimepenastudio, o arquitecto colombiano baseado no México que foca em
+               bioconstrução e que tem mais de 20 anos de experiência construindo com bambu.</p>
+        </div>
+    </div>
+
+    <div class="w3-card w3-margin gallery-item">
+        <img src="/assets/images/gallery-5.jpg" alt="Image 2" class="w3-image">
+        <div class="w3-container w3-center">
+            <p>Na tarde do dia 19 de outubro, o 4º dia do Seminário Internacional ASSAMBA 2023, 
+              nossos instrutores foram 2 convidados especiais vindos diretamente de Cabo Delgado:
+               o Betinho e o Yamikane são artesãos que trabalham com bambu desde 2012.</p>
+        </div>
+    </div>
+
+    <div class="w3-card w3-margin gallery-item">
+        <img src="/assets/images/gallery-4.jpg" alt="Image 3" class="w3-image">
+        <div class="w3-container w3-center">
+            <p>Depois de colher um broto de bambu na farma da ASSAMBA, na manhã do dia 19 de outubro de 2023 
+              (4º dia de seminário), a nossa convidada especial Natália Reategui @natencomic deu uma aula teórica
+               sobre os benefícios e particularidades do uso alimentício dos brotos de bambu.</p>
+        </div>
+    </div>
+
+    <div class="w3-card w3-margin gallery-item">
+        <img src="/assets/images/gallery-1.jpg" alt="Image 4" class="w3-image">
+        <div class="w3-container w3-center">
+            <p>O 3º dia do Seminário Internacional ASSAMBA foi no dia 18 de Outubro. A Vice-Presidente da ASSAMBA e 
+              pesquisadora do Instituto Nacional de Investigação Agrária de Moçambique Esperança Chamba e sua colega
+               Horácia partilharam muito conhecimento sobre características fisiológicas do bambu e técnicas para a 
+               sua propagação, cultivo e maneio.</p>
+        </div>
+    </div>
+
+    <div class="w3-card w3-margin gallery-item">
+        <img src="/assets/images/gallery_7.jpg" alt="Image 5" class="w3-image">
+        <div class="w3-container w3-center">
+            <p>No dia 17 de Outubro foi o 2º dia do Seminário Internacional ASSAMBA 2023, na Ponta do Ouro. 
+              O Bambu expert @fredhornaday ministrou uma aula teórica sobre biocarvão e produção de créditos de 
+              carbono a partir da sua incorporação ao solo. </p>
+        </div>
+    </div>
+
+    <div class="w3-card w3-margin gallery-item">
+        <img src="/assets/images/gallery-8.jpg" alt="Image 6" class="w3-image">
+        <div class="w3-container w3-center">
+            <p>No dia 16 de Outubro ocorreu a abertura do 1º Seminário Internacional da Associação dos Amigos do Bambu
+               - ASSAMBA. Foi um dia de muita troca de conhecimento e discussões interessantes sobre as múltiplas
+                funcionalidades e potenciais impactos do Bambu no Centro Internacional de Conferências Joaquim Chissano,
+               em Maputo.</p>
+        </div>
+    </div>
+
+    
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer-container">
+  <div class="footer-content">
+      <div class="footer-section-img">
+          <img src="assets/images/logo.png" width="100px" alt="logo">
+          <p style="color: #000;">Associação dos Amigos do Bambu - ASSAMBA</p>
+          <div class="input-container">
+            <input type="email" class="email-input" placeholder="Enter your email address">
+            <button type="submit" class="email-submit-button">
+              <img src="assets/images/arrow.png" alt="icon" class="button-icon"></button>
+        </div>
+      </div>
+      <div class="footer-section">
+          <h3>LINKS</h3>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html#initiatives">INITIATIVES</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+      </div>
+      
+      <div class="footer-section">
+          <h3>CONTACT</h3>
+          <ul>
+            <li><a href="/index.html/#contact" target="_blank">Contact Form</a></li>
+            <li><a href="/coming soon.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="/coming soon.html" target="_blank">T&C</a></li>
+        </ul>
+        
+      
+      </div>
+      <div class="footer-section">
+          <h3>SOCIAL</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/assamba.moz/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/assamba/?originalSubdomain=mz" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>© ASSAMBA. All Rights Reserved 2024 </p>
+  </div>
+</footer>
+
+
+<!-- END -->
+
+
+
+
+</body>
+</html>

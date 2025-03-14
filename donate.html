@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #000000;
+  }
+
+  .donate-container {
+      max-width: 90%;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #000000;
+      font-family: 'Bebas Neue';
+      font-weight: lighter;
+  }
+
+  .bank-details, .qr-code-section {
+      margin-top: 20px;
+  }
+
+  .qr-code-placeholder {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto;
+      border: 2px dashed #ccc;
+      font-size: 14px;
+      color: #666;
+  }
+
+  @media (max-width: 600px) {
+      .donate-container {
+          padding: 15px;
+      }
+
+      h1 {
+          font-size: 1.5rem;
+      }
+
+      .qr-code-placeholder {
+          max-width: 150px;
+          font-size: 12px;
+      }
+  }
+</style>
+
+</head>
+<body>
+
+<section class="hero">
+
+    <!-- Logo Section -->
+  <div class="logo">
+       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="index.html">
+    <img src="assets/images/logo.png" alt="Logo">
+</a>
+    <a href="coming soon.html" class="mobile-ctn"><button>DONATE!</button></a>
+    <!-- Navigation links (hidden by default) -->
+  </div>
+  <!-- end -->
+      
+        <nav class="navbar">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#initiatives">INITIATIVES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+                <li><a href="coming soon.html"><button class="donate-btn">DONATE NOW</button></a></li>
+            </ul>
+        </nav>
+</section>
+
+<div class="container" style="margin: 50px;">
+  <div class="donate-section text-center">
+    <h1 class="mb-4">Donate Now</h1>
+    <p class="mb-3">Your support helps us make a difference. Donate using the details below:</p>
+
+    <div class="bank-details text-start mb-4">
+      <h5>Banking Details:</h5>
+      <p><strong>Bank Name:</strong> ABC Bank</p>
+      <p><strong>Account Name:</strong> John Doe Foundation</p>
+      <p><strong>Account Number:</strong> 123456789</p>
+      <p><strong>IBAN:</strong> ABC123456789</p>
+      <p><strong>SWIFT:</strong> ABCDEF12</p>
+    </div>
+
+    <h5>Scan to Donate:</h5>
+    <img src="https://via.placeholder.com/150" alt="QR Code" class="qr-code">
+
+    <a href="#" class="btn btn-primary mt-4">Donate Now</a>
+  </div>
+</div>
+<!-- FOOTER -->
+
+<footer class="footer-container">
+  <div class="footer-content">
+      <div class="footer-section-img">
+          <img src="assets/images/logo.png" width="100px" alt="logo">
+          <p>Associação dos Amigos do Bambu - ASSAMBA</p>
+          <div class="input-container">
+            <input type="email" class="email-input" placeholder="Enter your email address">
+            <button type="submit" class="email-submit-button">
+              <img src="assets/images/arrow.png" alt="icon" class="button-icon"></button>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>LINKS</h3>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#initiatives">INITIATIVES</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="coming soon.html">FAQ</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer-section">
+        <h3>CONTACT</h3>
+        <ul>
+          <li><a href="/index.html/#contact" target="_blank">Contact Form</a></li>
+          <li><a href="/coming soon.html" target="_blank">Privacy Policy</a></li>
+          <li><a href="/coming soon.html" target="_blank">T&C</a></li>
+      </ul>
+      
+    
+    </div>
+    <div class="footer-section">
+        <h3>SOCIAL</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/assamba.moz/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/assamba/?originalSubdomain=mz" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+</div>
+  <div class="footer-bottom">
+      <p>© ASSAMBA. All Rights Reserved 2024 </p>
+  </div>
+</footer>
+
+
+<!-- END -->
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+    <style>
+      .hero {
+    background-image: none;
+    background-color: #5E753E;
+
+    .navbar {
+      border-bottom: 1px;
+      border-bottom-style: solid;
+      border-color: black;
+      border-color:rgba(206, 206, 206, 0.678);
+    }
+
+}
+
+    </style>
+
+<!-- project -->
+
+<script>
+  let currentProject = 0;
+ 
+ // Function to show the next project
+ function loadMore() {
+   const projects = document.querySelectorAll('.project-item');
+   
+   // Show the next project
+   if (currentProject < projects.length) {
+     projects[currentProject].style.display = 'block';
+     currentProject++;
+   }
+ 
+   // Change button text if all projects are shown
+   if (currentProject >= projects.length) {
+     document.getElementById('load-more-btn').textContent = 'NO MORE PROJECTS';
+   }
+ }
+ 
+ // Initialize by showing the first project
+ window.onload = loadMore;
+ </script>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en', // Default language of your website
+      includedLanguages: 'en,pt', // Languages to include: English and Portuguese
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+</head>
+<body>
+
+<section class="hero">
+
+    <!-- Logo Section -->
+  <div class="logo">
+       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="index.html">
+    <img src="assets/images/logo.png" alt="Logo">
+</a>
+    <a href="coming soon.html" class="mobile-ctn"><button>DONATE!</button></a>
+    <!-- Navigation links (hidden by default) -->
+  </div>
+  <!-- end -->
+      
+        <nav class="navbar">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#initiatives">INITIATIVES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+                <li><a href="coming soon.html"><button class="donate-btn">DONATE NOW</button></a></li>
+                <div id="google_translate_element"></div>
+
+            </ul>
+        </nav>
+</section>
+
+<section class="projects-section">
+  <h2>Our Projects</h2>
+  <div class="projects-container" id="projects-container">
+    <!-- Project 1 -->
+    <div class="project-item" id="project1">
+      <img src="assets/images/project-1-1.jpg" width="900px" height="500" alt="Project 1">
+      <h3>Land Restoration Programs</h3>
+      <p>We have established a Memorandum of Understanding with the Maputo Environmental Protection Area Authority (APAM)
+         to launch a pilot project aimed at restoring 12 hectares of degraded land by creating a bamboo and endemic
+          species forest. This initiative will involve planting 4,000 bamboo seedlings and 1,600 endemic plants,
+           fostering a resilient ecosystem and a functional mixed forest. The project will also work to restore 
+           soil integrity, enhance biodiversity, and create a natural barrier against erosion, while generating
+            employment and learning opportunities in forest management and sintropic agriculture. Furthermore, 
+            it seeks to empower and engage local communities and explore the economic potential of bamboo, 
+            laying the groundwork for a local bamboo product industry. This strategic partnership underscores
+             our commitment to environmental restoration, community empowerment, and sustainable economic 
+             development in the region.</p>
+        
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-item" id="project2">
+      <img src="assets/images/project-2.jpg" width="900px" height="500" alt="Project 1">
+      <h3>DISASTER RESILIENT SOCIAL HOUSING INNITIATIVE</h3>
+      <p>In collaboration with key stakeholders such as INGD, Casa Congo, Jaime Peña Studio, Ayuda en Acción,
+         and Xi Bassile, we are designing a project for Disaster Resilient Bamboo Social Housing. Drawing
+          inspiration from the KUNA project implemented by Casa Congo in Nicaragua, our goal is to tackle
+           the housing deficit and empower vulnerable communities in Mozambique. The project focuses on developing,
+            testing, and building low-cost, disaster-resilient homes using bamboo and other bioconstruction materials.
+             Additionally, we aim to establish a holistic social and economic ecosystem that enables a bamboo value 
+             chain. The project will unfold in three phases: <strong>1. Prototyping –</strong>  testing and refining four 
+             culturally adapted, low-cost housing typologies; <strong>2. Pilot Project Implementation –</strong> building resilient
+              homes based on successful prototypes; and <strong>3. Scaling Up – </strong> expanding the solution to address the broader housing deficit in Mozambique.</p>
+        
+    </div>
+
+    
+
+  <button class="load-more-btn" id="load-more-btn" onclick="loadMore()">LOAD MORE</button>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer-container">
+  <div class="footer-content">
+      <div class="footer-section-img">
+          <img src="assets/images/logo.png" width="100px" alt="logo">
+          <p>Associação dos Amigos do Bambu - ASSAMBA</p>
+          <div class="input-container">
+            <input type="email" class="email-input" placeholder="Enter your email address">
+            <button type="submit" class="email-submit-button">
+              <img src="assets/images/arrow.png" alt="icon" class="button-icon"></button>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>LINKS</h3>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#initiatives">INITIATIVES</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="coming soon.html">FAQ</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer-section">
+        <h3>CONTACT</h3>
+        <ul>
+          <li><a href="/index.html/#contact" target="_blank">Contact Form</a></li>
+          <li><a href="/coming soon.html" target="_blank">Privacy Policy</a></li>
+          <li><a href="/coming soon.html" target="_blank">T&C</a></li>
+      </ul>
+      
+    
+    </div>
+    <div class="footer-section">
+        <h3>SOCIAL</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/assamba.moz/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/assamba/?originalSubdomain=mz" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+</div>
+  <div class="footer-bottom">
+      <p>© ASSAMBA. All Rights Reserved 2024 </p>
+  </div>
+</footer>
+
+
+<!-- END -->
+
+
+
+
+  
+    <script>
+   // Function to handle carousel scrolling
+function scrollCarousel(carouselId, direction) {
+  const carousel = document.getElementById(carouselId); // Target specific carousel by ID
+  const items = carousel.querySelectorAll('.carousel-item'); // Get all carousel items
+  const visibleItems = 3; // Number of items visible in the carousel
+  const totalItems = items.length; // Total number of items in the carousel
+
+  // Retrieve or initialize the current scroll index
+  let scrollIndex = parseInt(carousel.dataset.scrollIndex) || 0;
+
+  // Calculate the new scroll index
+  scrollIndex += direction;
+
+  // Clamp the scrollIndex to ensure it stays within bounds
+  if (scrollIndex < 0) {
+    scrollIndex = 0; // Prevent scrolling before the first item
+  } else if (scrollIndex > totalItems - visibleItems) {
+    scrollIndex = totalItems - visibleItems; // Prevent scrolling past the last visible group
+  }
+
+  // Store the updated scroll index
+  carousel.dataset.scrollIndex = scrollIndex;
+
+  // Calculate the new transform value
+  const itemWidth = carousel.querySelector('.carousel-item').offsetWidth;
+  const transformValue = -scrollIndex * itemWidth;
+
+  // Apply the transform to scroll the carousel
+  carousel.style.transform = `translateX(${transformValue}px)`;
+}
+
+// Example usage: Attach event listeners to carousel buttons
+document.addEventListener('DOMContentLoaded', () => {
+  const leftButtons = document.querySelectorAll('.carousel-button-left');
+  const rightButtons = document.querySelectorAll('.carousel-button-right');
+
+  leftButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const carouselId = button.dataset.target; // Get the target carousel ID from data attribute
+      scrollCarousel(carouselId, -1); // Scroll left
+    });
+  });
+
+  rightButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const carouselId = button.dataset.target; // Get the target carousel ID from data attribute
+      scrollCarousel(carouselId, 1); // Scroll right
+    });
+  });
+});
+
+    </script>
+</body>
+</html>

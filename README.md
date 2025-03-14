@@ -1,1 +1,1 @@
-# assamba.org
+# assamba

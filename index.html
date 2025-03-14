@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSAMBA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en', // Default language of your website
+      includedLanguages: 'en,pt-PT', // Languages to include: English and Portuguese
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+<!-- project -->
+
+<script>
+ let currentProject = 0;
+
+// Function to show the next project
+function loadMore() {
+  const projects = document.querySelectorAll('.project-item');
+  
+  // Show the next project
+  if (currentProject < projects.length) {
+    projects[currentProject].style.display = 'block';
+    currentProject++;
+  }
+
+  // Change button text if all projects are shown
+  if (currentProject >= projects.length) {
+    document.getElementById('load-more-btn').textContent = 'NO MORE PROJECTS';
+  }
+}
+
+// Initialize by showing the first project
+window.onload = loadMore;
+</script>
+
+
+
+<style>
+
+  
+
+</style>
+
+</head>
+<body>
+
+<section class="hero">
+
+    <!-- Logo Section -->
+  <div class="logo">
+       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+    <img src="assets/images/logo.png" alt="Logo">
+    <a href="donations.html" class="mobile-ctn"><button>DONATE!</button></a>
+    <!-- Navigation links (hidden by default) -->
+  </div>
+  <!-- end -->
+      
+        <nav class="navbar">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#initiatives">INITIATIVES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="donations.html"><button class="donate-btn">DONATE NOW</button></a></li>
+                <div id="google_translate_element"></div>
+
+            </ul>
+        </nav>
+
+        <div class="hero-text">
+            <h1>BUILDING A SUSTAINABLE <br> FUTURE WITH BAMBOO</h1>
+            <a href="#contact"><button class="cta-button">GET INVOLVED</button></a>
+        </div>
+
+</section>
+
+
+    <!-- INITIATIVES -->
+
+    <section class="initiatives" id="initiatives">
+       
+        <div class="info">
+
+            <h2>Our<br> Initiatives</h2>
+
+            <p> Discover how ASSAMBA leverages bamboo to drive sustainable development</p>
+            <a href="assets/ASSAMBA PROFILE PRESENTATION.pdf"><button class="cta-button">LEARN MORE</button></a>
+
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="assets/images/education.png" alt="book" width="100px">
+                <h3>Education</h3>
+                <p>Raising awareness about the environmental and economic potential of bamboo.</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/training.png" alt="training" width="100px">
+                <h3>Training</h3>
+                <p>Practical skills for sustainable bamboo cultivation and industrial applications.</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/research.png" alt="research" width="100px">
+                <h3>Research</h3>
+                <p>Advancing bamboo knowledge to promote eco-friendly solutions.</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/projects.png" alt="projects" width="100px">
+                <h3>Projects</h3>
+                <p>Disaster Resilient Housing, Land Restoration Programs, Bamboo Charcoal and Biochar Production.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    
+    <!-- WHY CHOOSE US -->
+
+    <section class="why-choose-us">
+        <div class="image">
+            <img src="assets/images/why-choose-us.jpg" alt="Bamboo Image">
+        </div>
+        
+        <div class="content">
+            <div class="text">
+                <h2>Why Choose Us?</h2>
+                <h4>Experience and Growth:</h4><p>ASSAMBA drives sustainability through key initiatives: a €15,000 PACJA grant to expand bamboo by 10 hectares, an €18,000 Merz Foundation project to rehabilitate 16 hectares, and a €120,000 DAAD grant to develop a bamboo-focused curriculum with global partners.</p>
+                <h4>Community Empowerment:</h4>
+                <p>ASSAMBA has trained 40 farmers and over 150 participants in bamboo cultivation, production, and sustainable practices,
+                   promoting self-sufficiency in local communities.</p>
+                <h4>Expanding Impact:</h4>
+                <p>ASSAMBA drives sustainability through key initiatives: a €15,000 PACJA grant to expand bamboo by 10 hectares,
+                   an €18,000 Merz Foundation project to rehabilitate 16 hectares, and a €120,000 DAAD grant to develop a bamboo-focused curriculum with global partners.</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+<!-- ASSOCIATION MEMBERS
+
+
+<section class="association-members">
+
+    <div class="team-intro">
+        <h2>ASSOCIATION MEMBERS</h2>
+        <p class="team-description">A dedicated group of <strong>11 experts</strong> and changemakers passionate
+            about sustainable development, committed to empowering
+            communities and fostering a greener future through bamboo
+            innovation.</p>
+        
+    
+    </div> -->
+
+<!-- <div class="carousel-wrapper"> -->
+  <!-- Left Button -->
+  <!-- <button class="carousel-button left" onclick="scrollCarousel('carousel-association-members', -1)">&lt;</button> -->
+
+
+  <!-- Carousel Container 
+  <div class="carousel-container">
+    <div class="carousel" id="carousel-association-members">
+      <div class="carousel-item" style="flex: 0 0 33.33%;">
+        <h4>John Doe</h4>
+        <p>Position</p>
+      </div>
+      <div class="carousel-item" style="flex: 0 0 33.33%;">
+ 
+        <h4>John Doe</h4>
+        <p>Position</p>
+      </div>
+      <div class="carousel-item" style="flex: 0 0 33.33%;">
+        <h4>John Doe</h4>
+        <p>Position</p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Right Button -->
+  <!-- <button class="carousel-button right" onclick="scrollCarousel('carousel-association-members', 1)">&gt;</button> -->
+</div>
+
+</section>
+
+<!-- END -->
+
+<!-- PARTNERS -->
+
+<section class="partners">
+
+<div class="partners-container">
+    <h2 style="display: flex; justify-content: center; align-items: center; color: #ffff; font-size: 40px;">OUR PARTNERS</h2>
+    </div>
+
+<div class="carousel-wrapper">
+  <!-- Left Button -->
+  <button class="carousel-button left" onclick="scrollCarousel('carousel-partners', -1)">&lt;</button>
+
+  <!-- Carousel Container -->
+  <div class="carousel-container">
+
+    <div class="carousel" id="carousel-partners">
+      <div class="carousel-item">
+        <a href="https://pacja.org/">
+          <img src="assets/images/partner1.png" alt="Board Member">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.xibassile.com/home-pt">
+          <img src="assets/images/partner2.jpg" alt="Board Member">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.101bambusolution.com/">
+          <img src="assets/images/partner3.jpg" alt="Board Member">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://agritechmoz.com/">
+          <img src="assets/images/partner4.png" alt="Board Member">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.daad.de/en/">
+          <img src="assets/images/partner6.png" alt="Board Member">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://welt-weit.org/en/">
+          <img src="assets/images/partner7.jpg" alt="Board Member">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="#">
+          <img src="assets/images/partner11.jpg" alt="Board Member">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.hs-rm.de/en/">
+          <img src="assets/images/partner12.jpg" alt="Board Member">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://uem.mz/">
+          <img src="assets/images/partner13.jpg" alt="Board Member">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://apamaputo.org/index.php/apresentacao-do-menu-institucional">
+          <img src="assets/images/partner14.jpg" alt="Board Member">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://onemillionvoices.agroecologymap.org/es/locations/gua-quye">
+          <img src="assets/images/partner-15.jpeg" alt="Board Member">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.instagram.com/manabambooworld/">
+          <img src="assets/images/partners/mana.jpeg" alt="Board Member">
+        </a>
+      </div>
+    </div>
+    
+
+  <!-- Right Button -->
+  <button class="carousel-button right" onclick="scrollCarousel('carousel-partners', 1)">&gt;</button>
+</div>
+
+</section>
+
+
+
+
+<!-- END -->
+
+<!-- CONTACT US -->
+
+<section class="contact-container" id="contact">
+  <div class="contact-form">
+      <h2>GET IN TOUCH<br>WITH US</h2>
+      <form action="#">
+          <div class="input-group">
+              <input type="text" placeholder="Name" required>
+              <input type="text" placeholder="Phone Number" required>
+          </div>
+          <div class="input-group">
+              <input type="email" placeholder="Email" required>
+              <input type="text" placeholder="Subject" required>
+          </div>
+          <textarea placeholder="Message" rows="5" required></textarea>
+          <button class="submit-button" type="submit">SEND</button>
+      </form>
+  </div>
+  <div class="contact-info">
+    <h3>OFFICE CONTACT</h3>
+    <p>Phone: +258 86 673 8958</p>
+    <p>Email: info@assamba.org</p>
+      <hr>
+      <h3>HEADQUARTERS</h3>
+      <p>Ponta do Ouro, Maputo, Mozambique</p>
+      <hr>
+
+  </div>
+</section>
+
+<!-- END -->
+
+<!-- FOOTER -->
+
+<footer class="footer-container">
+  <div class="footer-content">
+      <div class="footer-section-img">
+          <img src="assets/images/logo.png" width="100px" alt="logo">
+          <p style="color: #000;">Associação dos Amigos do Bambu - ASSAMBA</p>
+          <div class="input-container">
+            <input type="email" class="email-input" placeholder="Enter your email address">
+            <button type="submit" class="email-submit-button">
+              <img src="assets/images/arrow.png" alt="icon" class="button-icon"></button>
+        </div>
+      </div>
+      <div class="footer-section">
+          <h3>LINKS</h3>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html#initiatives">INITIATIVES</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="coming soon.html">FAQ</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+      </div>
+      
+      <div class="footer-section">
+          <h3>CONTACT</h3>
+          <ul>
+            <li><a href="/index.html/#contact" target="_blank">Contact Form</a></li>
+            <li><a href="/Privacy Policy.html" target="_blank">Privacy Policy</a></li>
+        </ul>
+        
+      
+      </div>
+      <div class="footer-section">
+          <h3>SOCIAL</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/assamba.moz/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/assamba/?originalSubdomain=mz" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>© ASSAMBA. All Rights Reserved 2024 </p>
+  </div>
+</footer>
+
+
+<!-- END -->
+
+
+
+
+  
+    <script>
+   // Function to handle carousel scrolling
+function scrollCarousel(carouselId, direction) {
+  const carousel = document.getElementById(carouselId); // Target specific carousel by ID
+  const items = carousel.querySelectorAll('.carousel-item'); // Get all carousel items
+  const visibleItems = 3; // Number of items visible in the carousel
+  const totalItems = items.length; // Total number of items in the carousel
+
+  // Retrieve or initialize the current scroll index
+  let scrollIndex = parseInt(carousel.dataset.scrollIndex) || 0;
+
+  // Calculate the new scroll index
+  scrollIndex += direction;
+
+  // Clamp the scrollIndex to ensure it stays within bounds
+  if (scrollIndex < 0) {
+    scrollIndex = 0; // Prevent scrolling before the first item
+  } else if (scrollIndex > totalItems - visibleItems) {
+    scrollIndex = totalItems - visibleItems; // Prevent scrolling past the last visible group
+  }
+
+  // Store the updated scroll index
+  carousel.dataset.scrollIndex = scrollIndex;
+
+  // Calculate the new transform value
+  const itemWidth = carousel.querySelector('.carousel-item').offsetWidth;
+  const transformValue = -scrollIndex * itemWidth;
+
+  // Apply the transform to scroll the carousel
+  carousel.style.transform = `translateX(${transformValue}px)`;
+}
+
+// Example usage: Attach event listeners to carousel buttons
+document.addEventListener('DOMContentLoaded', () => {
+  const leftButtons = document.querySelectorAll('.carousel-button-left');
+  const rightButtons = document.querySelectorAll('.carousel-button-right');
+
+  leftButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const carouselId = button.dataset.target; // Get the target carousel ID from data attribute
+      scrollCarousel(carouselId, -1); // Scroll left
+    });
+  });
+
+  rightButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const carouselId = button.dataset.target; // Get the target carousel ID from data attribute
+      scrollCarousel(carouselId, 1); // Scroll right
+    });
+  });
+});
+
+
+    </script>
+
+
+
+</body>
+</html>
+
