@@ -318,6 +318,75 @@ html, body {
 
 }
 
+/* picture and text block */
+
+
+.about-block {
+    background-color: #5e753e;
+    margin-bottom: 60px;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.about-block .image {
+    margin: 0px;
+    padding: 0px;
+
+    img {
+        width: 450px;
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        
+    }
+}
+
+
+.about-block .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    
+}
+.about-block .content {
+    flex: 1 1 50%;
+}
+.about-block .content {
+    width: 100%;
+    border-radius: 8px;
+}
+.about-block .content .text {
+    flex: 1 1 50%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    h4 {
+ 
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h2 {
+        font-family: 'Bebas Neue';
+        font-size: 20px;
+    }
+
+    p {
+        margin-top: 5px;
+        font-weight: lighter;
+    }
+
+
+}
+
 /* TEAM */
 
 .team-intro {
@@ -768,7 +837,7 @@ a {
 /* Media Queries */
 
 /* Mobile-specific adjustments */
-@media (max-width: 490px) {
+@media (max-width: 1400px) {
   
     .hero-text h1 {
         font-size: 45px; /* Smaller font size on mobile */
@@ -829,7 +898,7 @@ a {
     }
 
     .hamburger {
-        width: 50px;
+        width: 35px;
         margin-left: 15px;
     }
   }
@@ -875,6 +944,7 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #5e753e;
+    align-items: center;
 }
 .initiatives {
     .info {
@@ -903,16 +973,19 @@ a {
 .initiatives .cards {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 20px;
-    width: 95%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 900px;
     padding-left: 10px;
+    margin-right: 0px;
     margin-bottom: 60px;
+    margin-left: 7%;
 }
 .card {
-    flex: 1 1 calc(50% - 40px);
+    flex: 1 1 100%; /* Single column on smaller screens */
+    max-width: 90%;
     background: #b5bf93;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -920,6 +993,8 @@ a {
     align-items: center;
     display: flex;
     flex-direction: column;
+    
+    
 
     h3 {
        
@@ -935,6 +1010,7 @@ a {
         color: #ffffff;
         padding-right: 15px;
         padding-left: 15px;
+        flex-grow: 1; /* Forces paragraph to stretch */
     }
 }
 
@@ -1307,6 +1383,13 @@ hr {
     width: 25px;   /* Adjust the icon size */
     height: 25px;  /* Adjust the icon size */
     
+}
+
+
+.about-block {
+    .image img {
+        display: none;
+    }
 }
 
 }
