@@ -837,7 +837,7 @@ a {
 /* Media Queries */
 
 /* Mobile-specific adjustments */
-@media (max-width: 1369px) {
+@media (max-width: 1270px) {
   
     .hero-text h1 {
         font-size: 45px; /* Smaller font size on mobile */

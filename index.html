@@ -398,24 +398,24 @@ html, body {
 
   
     <script>
-   // Function to handle carousel scrolling
-function scrollCarousel(carouselId, direction) {
+ function scrollCarousel(carouselId, direction) {
   const carousel = document.getElementById(carouselId); // Target specific carousel by ID
   const items = carousel.querySelectorAll('.carousel-item'); // Get all carousel items
-  const visibleItems = 3; // Number of items visible in the carousel
-  const totalItems = items.length; // Total number of items in the carousel
+  const visibleItems = 6; // Number of items visible at a time
+  const totalItems = items.length; // Total number of items
+  const scrollStep = 6; // Scroll by 6 items at a time
 
   // Retrieve or initialize the current scroll index
   let scrollIndex = parseInt(carousel.dataset.scrollIndex) || 0;
 
   // Calculate the new scroll index
-  scrollIndex += direction;
+  scrollIndex += direction * scrollStep;
 
-  // Clamp the scrollIndex to ensure it stays within bounds
+  // Ensure scrollIndex stays within bounds
   if (scrollIndex < 0) {
     scrollIndex = 0; // Prevent scrolling before the first item
   } else if (scrollIndex > totalItems - visibleItems) {
-    scrollIndex = totalItems - visibleItems; // Prevent scrolling past the last visible group
+    scrollIndex = totalItems - visibleItems; // Prevent scrolling past the last set of visible items
   }
 
   // Store the updated scroll index
@@ -425,26 +425,26 @@ function scrollCarousel(carouselId, direction) {
   const itemWidth = carousel.querySelector('.carousel-item').offsetWidth;
   const transformValue = -scrollIndex * itemWidth;
 
-  // Apply the transform to scroll the carousel
+  // Apply the transform to move the carousel
   carousel.style.transform = `translateX(${transformValue}px)`;
 }
 
-// Example usage: Attach event listeners to carousel buttons
+// Attach event listeners to carousel buttons
 document.addEventListener('DOMContentLoaded', () => {
   const leftButtons = document.querySelectorAll('.carousel-button-left');
   const rightButtons = document.querySelectorAll('.carousel-button-right');
 
   leftButtons.forEach(button => {
     button.addEventListener('click', () => {
-      const carouselId = button.dataset.target; // Get the target carousel ID from data attribute
-      scrollCarousel(carouselId, -1); // Scroll left
+      const carouselId = button.dataset.target;
+      scrollCarousel(carouselId, -1); // Scroll left by 6
     });
   });
 
   rightButtons.forEach(button => {
     button.addEventListener('click', () => {
-      const carouselId = button.dataset.target; // Get the target carousel ID from data attribute
-      scrollCarousel(carouselId, 1); // Scroll right
+      const carouselId = button.dataset.target;
+      scrollCarousel(carouselId, 1); // Scroll right by 6
     });
   });
 });
