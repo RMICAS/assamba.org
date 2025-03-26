@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASSAMBA</title>
+    <title>Assamba | Home</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -404,37 +404,30 @@ html, body {
   
     <script>
  function scrollCarousel(carouselId, direction) {
-  const carousel = document.getElementById(carouselId); // Target specific carousel by ID
-  const items = carousel.querySelectorAll('.carousel-item'); // Get all carousel items
-  const visibleItems = 6; // Number of items visible at a time
-  const totalItems = items.length; // Total number of items
-  const scrollStep = 6; // Scroll by 6 items at a time
+  const carousel = document.getElementById(carouselId);
+  const items = carousel.querySelectorAll('.carousel-item');
+  const isMobile = window.innerWidth <= 768; // Detect mobile devices
+  const visibleItems = isMobile ? 1 : 6; // 1 item on mobile, 6 on desktop
+  const scrollStep = isMobile ? 1 : 6; // Scroll by 1 on mobile, 6 on desktop
+  const totalItems = items.length;
 
-  // Retrieve or initialize the current scroll index
   let scrollIndex = parseInt(carousel.dataset.scrollIndex) || 0;
-
-  // Calculate the new scroll index
   scrollIndex += direction * scrollStep;
 
-  // Ensure scrollIndex stays within bounds
   if (scrollIndex < 0) {
-    scrollIndex = 0; // Prevent scrolling before the first item
+    scrollIndex = 0;
   } else if (scrollIndex > totalItems - visibleItems) {
-    scrollIndex = totalItems - visibleItems; // Prevent scrolling past the last set of visible items
+    scrollIndex = totalItems - visibleItems;
   }
 
-  // Store the updated scroll index
   carousel.dataset.scrollIndex = scrollIndex;
 
-  // Calculate the new transform value
   const itemWidth = carousel.querySelector('.carousel-item').offsetWidth;
   const transformValue = -scrollIndex * itemWidth;
 
-  // Apply the transform to move the carousel
   carousel.style.transform = `translateX(${transformValue}px)`;
 }
 
-// Attach event listeners to carousel buttons
 document.addEventListener('DOMContentLoaded', () => {
   const leftButtons = document.querySelectorAll('.carousel-button-left');
   const rightButtons = document.querySelectorAll('.carousel-button-right');
@@ -442,18 +435,17 @@ document.addEventListener('DOMContentLoaded', () => {
   leftButtons.forEach(button => {
     button.addEventListener('click', () => {
       const carouselId = button.dataset.target;
-      scrollCarousel(carouselId, -1); // Scroll left by 6
+      scrollCarousel(carouselId, -1);
     });
   });
 
   rightButtons.forEach(button => {
     button.addEventListener('click', () => {
       const carouselId = button.dataset.target;
-      scrollCarousel(carouselId, 1); // Scroll right by 6
+      scrollCarousel(carouselId, 1);
     });
   });
 });
-
 
     </script>
 
