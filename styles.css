@@ -17,7 +17,7 @@ html, body {
 /* Hero Section */
 
 .hero {
-    background: url('assets/images/hero-img-3.png') center/cover no-repeat;
+    background: url('assets/images/hero-new\ \(1\).jpg') center/cover no-repeat;
     color: white;
     text-align: center;
     
@@ -676,7 +676,7 @@ button:hover {
 
 /* Adjusting the font inside placeholders */
 input::placeholder, textarea::placeholder {
-    font-family: 'Lato';
+    font-family: 'roboto';
     font-size: 14px;                 
     color: #888;                     
     opacity: 1;                      
